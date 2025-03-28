@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,51 +13,71 @@ export default function ResultScreen() {
       />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-start p-8">
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 p-6">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-bold text-yellow-200 drop-shadow-lg mt-6">
-          Match Results
+        <h1 className="text-5xl md:text-6xl font-bold text-yellow-200 drop-shadow-lg">
+          Match Result
         </h1>
 
+        {/* Players Section */}
+        <div className="flex gap-16 mt-8 items-center">
+          {/* Player 1 */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-40 h-40 rounded-full border-4 border-yellow-400 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 relative">
+              <Image
+                src="/arthur.jpeg"
+                alt="Player 1"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-white text-xl">Arthur Morgan</p>
+          </div>
+
+          {/* VS */}
+          <div className="text-4xl text-white font-bold">VS</div>
+
+          {/* Player 2 */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-40 h-40 rounded-full border-4 border-yellow-400 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 relative">
+              <Image
+                src="/voldemort.jpeg"
+                alt="Player 2"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-white text-xl">Voldemort</p>
+          </div>
+        </div>
+
         {/* Result Box */}
-        <div className="backdrop-blur-md bg-white/10 text-white p-8 rounded-xl max-w-4xl w-full shadow-lg border border-white border-opacity-30 mt-12 flex flex-col items-center gap-6">
-          {/* Players & Scores */}
-          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8">
-            {/* Player 1 */}
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-32 h-32 rounded-full border border-white flex items-center justify-center text-center">
-                Player 1
-              </div>
-              <p className="text-lg">Harry Potter</p>
-            </div>
+        <div className="backdrop-blur-md bg-white/10 text-white p-6 rounded-xl max-w-lg w-full shadow-lg border border-white border-opacity-30 mt-8">
+          <h2 className="text-2xl mb-4 text-center">
+            Winner: 🧙‍♂️ Arthur Morgan
+          </h2>
+          <p className="text-center text-sm md:text-base">
+            You outwitted your opponent with magical knowledge!
+          </p>
+        </div>
 
-            {/* Score */}
-            <div className="backdrop-blur-sm bg-white/10 border border-white border-opacity-30 rounded-md px-6 py-4 text-xl font-semibold text-yellow-200">
-              120 - 80
-            </div>
-
-            {/* Player 2 */}
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-32 h-32 rounded-full border border-white flex items-center justify-center text-center">
-                Player 2
-              </div>
-              <p className="text-lg">Draco Malfoy</p>
-            </div>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex gap-4 mt-6">
-            <Link href="/game">
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold shadow-md transition duration-300">
-                New Match
-              </button>
-            </Link>
-            <Link href="/">
-              <button className="bg-white hover:bg-gray-300 text-black px-6 py-2 rounded-md font-semibold shadow-md transition duration-300">
-                Home
-              </button>
-            </Link>
-          </div>
+        {/* Buttons */}
+        <div className="flex gap-6 mt-6 flex-wrap justify-center">
+          <Link href="/">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold shadow-md transition-colors">
+              Home
+            </button>
+          </Link>
+          <Link href="/match">
+            <button className="bg-white/10 text-white px-6 py-2 rounded-md font-semibold shadow-md border border-yellow-400 hover:bg-white/20 transition-colors">
+              New Match
+            </button>
+          </Link>
+          <Link href="/leaderboard">
+            <button className="bg-white/10 text-white px-6 py-2 rounded-md font-semibold shadow-md border border-yellow-400 hover:bg-white/20 transition-colors">
+              Leaderboard
+            </button>
+          </Link>
         </div>
       </div>
     </div>
