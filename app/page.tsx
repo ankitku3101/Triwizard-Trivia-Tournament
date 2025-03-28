@@ -1,11 +1,5 @@
-import Image from "next/image";
+import LandingScreen from "@/app/components/LandingScreen";
 
 export default function Home() {
-  return (
-    <>
-      <div className="h-screen text-center items-center justify-center flex text-5xl">
-        Triwizard Trivia Tournament
-      </div>
-    </>
-  );
+  return <LandingScreen />;
 }
