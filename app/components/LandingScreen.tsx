@@ -1,7 +1,21 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function LandingScreen() {
+  const router = useRouter();
+  const [level, setLevel] = useState("easy"); // Default difficulty level
+  const [wizardName, setWizardName] = useState(""); // Wizard name state
+
+  const startGame = () => {
+    if (!wizardName.trim()) {
+      alert("Please enter your Wizard Name! 🧙‍♂️");
+      return;
+    }
+    router.push(`/game-room?name=${encodeURIComponent(wizardName)}&level=${level}`);
+  };
+
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
@@ -46,14 +60,33 @@ export default function LandingScreen() {
           </div>
         </div>
 
-        {/* Input & Button */}
+        {/* Input & Dropdown & Button */}
         <div className="flex flex-col gap-4 w-full max-w-md items-center">
+          {/* Wizard Name Input */}
           <input
             type="text"
             placeholder="Enter your Wizard Name"
+            value={wizardName}
+            onChange={(e) => setWizardName(e.target.value)}
             className="px-4 py-3 w-full rounded-md bg-white/10 text-white border border-yellow-400 focus:outline-none backdrop-blur-md placeholder-white placeholder-opacity-80"
           />
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold shadow-md w-40">
+
+          {/* Difficulty Level Dropdown */}
+          <select
+            value={level}
+            onChange={(e) => setLevel(e.target.value)}
+            className="p-3 w-full rounded-md bg-white/10 text-white border border-yellow-400 focus:outline-none backdrop-blur-md"
+          >
+            <option value="easy">🟢 Easy</option>
+            <option value="medium">🟠 Medium</option>
+            <option value="hard">🔴 Hard</option>
+          </select>
+
+          {/* Start Game Button */}
+          <button
+            onClick={startGame}
+            className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold shadow-md w-40"
+          >
             Start Game
           </button>
         </div>
