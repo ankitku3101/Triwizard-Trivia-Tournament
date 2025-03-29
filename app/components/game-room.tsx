@@ -52,8 +52,11 @@ export default function GameRoom() {
     <div className="relative h-screen w-full overflow-hidden">
       <Image src="/hogwarts.jpg" alt="Hogwarts" fill className="object-cover opacity-50" />
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white">
-        <h1 className="text-4xl font-bold mb-4">Triwizard Trivia</h1>
+        <h1 className="text-4xl font-bold mb-2">Triwizard Trivia</h1>
+        {/* Player Name */}
+        <p className="text-xl mb-4">Welcome, {wizardName} 🧙‍♂️</p>
 
+        {/* Timer & Question Number */}
         <div className="flex justify-between items-center w-full max-w-lg bg-black/60 p-4 rounded-lg shadow-lg">
           <span className="text-lg">
             Question {currentQuestion + 1} / {questions.length}
@@ -61,10 +64,12 @@ export default function GameRoom() {
           <span className="text-lg">⏳ {timeLeft}s</span>
         </div>
 
+        {/* Question */}
         <div className="mt-6 w-full max-w-2xl bg-black/60 p-6 rounded-lg shadow-lg">
           <h2 className="text-xl text-center">{questions[currentQuestion].question}</h2>
         </div>
 
+        {/* Options */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
           {questions[currentQuestion].options.map((option, index) => (
             <button
@@ -84,6 +89,7 @@ export default function GameRoom() {
           ))}
         </div>
 
+        {/* Score */}
         <div className="mt-6 text-lg bg-black/60 p-3 rounded-lg shadow-lg">Score: {score}</div>
       </div>
     </div>
