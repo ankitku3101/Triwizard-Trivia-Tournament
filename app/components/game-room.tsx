@@ -1,26 +1,25 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useSearchParams, useRouter } from "next/navigation";
 import easyQuestions from "@/data/questions/easy.json";
 import mediumQuestions from "@/data/questions/medium.json";
 import hardQuestions from "@/data/questions/hard.json";
-import { useSearchParams } from "next/navigation";
 
 export default function GameRoom() {
-    const searchParams = useSearchParams();
-    const wizardName = searchParams.get("name");
-    const level = searchParams.get("level");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const wizardName = searchParams.get("name");
+  const level = searchParams.get("level");
 
-  // Fetch questions based on level
   const questions =
     level === "medium" ? mediumQuestions : level === "hard" ? hardQuestions : easyQuestions;
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [timeLeft, setTimeLeft] = useState(15); // 15s per question
+  const [timeLeft, setTimeLeft] = useState(15);
   const [score, setScore] = useState(0);
 
-  // Move to the next question when timer reaches 0
   useEffect(() => {
     if (timeLeft <= 0) {
       nextQuestion();
@@ -31,52 +30,41 @@ export default function GameRoom() {
     return () => clearInterval(timer);
   }, [timeLeft]);
 
-  // Handle option selection
   const handleOptionSelect = (option: string) => {
     setSelectedOption(option);
     if (option === questions[currentQuestion].correctAnswer) {
-      setScore(score + 10);
+      setScore((prev) => prev + 10);
     }
-    setTimeout(nextQuestion, 1000); // Move to the next question after 1s
+    setTimeout(nextQuestion, 1000);
   };
 
-  // Move to next question or finish game
   const nextQuestion = () => {
     if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
+      setCurrentQuestion((prev) => prev + 1);
       setSelectedOption(null);
       setTimeLeft(15);
     } else {
-      alert(`Game Over! Your Score: ${score}`);
+      router.push(`/result?name=${wizardName}&score=${score}`);
     }
   };
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Background */}
-      <Image
-        src="/quidditch_arena.jpg"
-        alt="Hogwarts"
-        fill
-        className="object-cover opacity-50"
-      />
-
-      {/* Game Content */}
+      <Image src="/hogwarts.jpg" alt="Hogwarts" fill className="object-cover opacity-50" />
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white">
         <h1 className="text-4xl font-bold mb-4">Triwizard Trivia</h1>
 
-        {/* Timer & Question Number */}
         <div className="flex justify-between items-center w-full max-w-lg bg-black/60 p-4 rounded-lg shadow-lg">
-          <span className="text-lg">Question {currentQuestion + 1} / {questions.length}</span>
+          <span className="text-lg">
+            Question {currentQuestion + 1} / {questions.length}
+          </span>
           <span className="text-lg">⏳ {timeLeft}s</span>
         </div>
 
-        {/* Question Box */}
         <div className="mt-6 w-full max-w-2xl bg-black/60 p-6 rounded-lg shadow-lg">
           <h2 className="text-xl text-center">{questions[currentQuestion].question}</h2>
         </div>
 
-        {/* Options */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
           {questions[currentQuestion].options.map((option, index) => (
             <button
@@ -96,10 +84,7 @@ export default function GameRoom() {
           ))}
         </div>
 
-        {/* Score Display */}
-        <div className="mt-6 text-lg bg-black/60 p-3 rounded-lg shadow-lg">
-          Score: {score}
-        </div>
+        <div className="mt-6 text-lg bg-black/60 p-3 rounded-lg shadow-lg">Score: {score}</div>
       </div>
     </div>
   );
