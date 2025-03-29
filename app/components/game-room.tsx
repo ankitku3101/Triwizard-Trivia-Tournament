@@ -55,7 +55,7 @@ export default function GameRoom() {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background */}
       <Image
-        src="/hogwarts.jpg"
+        src="/quidditch_arena.jpg"
         alt="Hogwarts"
         fill
         className="object-cover opacity-50"
