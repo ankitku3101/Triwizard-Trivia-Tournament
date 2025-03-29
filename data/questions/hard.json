@@ -1,0 +1,153 @@
+[
+    {
+      "id": 1,
+      "question": "What type of wood is Harry Potter’s wand made from?",
+      "options": ["Holly", "Yew", "Ash", "Elm"],
+      "correctAnswer": "Holly"
+    },
+    {
+      "id": 2,
+      "question": "Who was the Headmaster of Durmstrang Institute?",
+      "options": ["Igor Karkaroff", "Viktor Krum", "Gellert Grindelwald", "Lucius Malfoy"],
+      "correctAnswer": "Igor Karkaroff"
+    },
+    {
+      "id": 3,
+      "question": "What is the name of the vault at Gringotts where the Philosopher's Stone was kept?",
+      "options": ["Vault 713", "Vault 777", "Vault 394", "Vault 302"],
+      "correctAnswer": "Vault 713"
+    },
+    {
+      "id": 4,
+      "question": "What is the name of the wizard who made the Sorcerer’s Stone?",
+      "options": ["Nicolas Flamel", "Gellert Grindelwald", "Bathilda Bagshot", "Phineas Nigellus Black"],
+      "correctAnswer": "Nicolas Flamel"
+    },
+    {
+      "id": 5,
+      "question": "What is the core of Hermione's wand?",
+      "options": ["Dragon Heartstring", "Phoenix Feather", "Unicorn Hair", "Thestral Tail Hair"],
+      "correctAnswer": "Dragon Heartstring"
+    },
+    {
+      "id": 6,
+      "question": "What does the spell ‘Sectumsempra’ do?",
+      "options": ["Causes deep gashes", "Unlocks doors", "Turns off lights", "Summons objects"],
+      "correctAnswer": "Causes deep gashes"
+    },
+    {
+      "id": 7,
+      "question": "What is Dumbledore’s sister’s name?",
+      "options": ["Ariana", "Merope", "Andromeda", "Lily"],
+      "correctAnswer": "Ariana"
+    },
+    {
+      "id": 8,
+      "question": "What creature pulls the carriages to Hogwarts?",
+      "options": ["Thestrals", "Hippogriffs", "Centaurs", "Dragons"],
+      "correctAnswer": "Thestrals"
+    },
+    {
+      "id": 9,
+      "question": "What is the name of the caretaker of Hogwarts?",
+      "options": ["Argus Filch", "Aberforth Dumbledore", "Cornelius Fudge", "Rufus Scrimgeour"],
+      "correctAnswer": "Argus Filch"
+    },
+    {
+      "id": 10,
+      "question": "Who created the Marauder’s Map?",
+      "options": ["Moony, Wormtail, Padfoot, and Prongs", "Fred and George", "Dumbledore", "The Founders of Hogwarts"],
+      "correctAnswer": "Moony, Wormtail, Padfoot, and Prongs"
+    },
+    {
+      "id": 11,
+      "question": "What is Harry’s middle name?",
+      "options": ["James", "Sirius", "Albus", "Lily"],
+      "correctAnswer": "James"
+    },
+    {
+      "id": 12,
+      "question": "What is the name of the vault where the Hufflepuff Cup was stored?",
+      "options": ["Bellatrix’s Vault", "Vault 713", "Vault 666", "Vault 394"],
+      "correctAnswer": "Bellatrix’s Vault"
+    },
+    {
+      "id": 13,
+      "question": "What potion grants good luck?",
+      "options": ["Felix Felicis", "Polyjuice Potion", "Amortentia", "Veritaserum"],
+      "correctAnswer": "Felix Felicis"
+    },
+    {
+      "id": 14,
+      "question": "What is the name of Neville Longbottom’s toad?",
+      "options": ["Trevor", "Scabbers", "Fang", "Crookshanks"],
+      "correctAnswer": "Trevor"
+    },
+    {
+      "id": 15,
+      "question": "Who destroyed Helga Hufflepuff's cup Horcrux?",
+      "options": ["Hermione Granger", "Ron Weasley", "Harry Potter", "Neville Longbottom"],
+      "correctAnswer": "Hermione Granger"
+    },
+    {
+      "id": 16,
+      "question": "What is the name of the magical mirror that shows deepest desires?",
+      "options": ["Mirror of Erised", "Pensieve", "Deluminator", "Invisibility Cloak"],
+      "correctAnswer": "Mirror of Erised"
+    },
+    {
+      "id": 17,
+      "question": "Which professor teaches Astronomy at Hogwarts?",
+      "options": ["Professor Sinistra", "Professor Vector", "Professor Trelawney", "Professor Sprout"],
+      "correctAnswer": "Professor Sinistra"
+    },
+    {
+      "id": 18,
+      "question": "What does the spell ‘Rictusempra’ do?",
+      "options": ["Tickling Charm", "Freezing Spell", "Fire Spell", "Stunning Spell"],
+      "correctAnswer": "Tickling Charm"
+    },
+    {
+      "id": 19,
+      "question": "What was Voldemort's mother’s name?",
+      "options": ["Merope Gaunt", "Ariana Dumbledore", "Bellatrix Lestrange", "Molly Weasley"],
+      "correctAnswer": "Merope Gaunt"
+    },
+    {
+      "id": 20,
+      "question": "What spell repels Dementors?",
+      "options": ["Expecto Patronum", "Expelliarmus", "Alohomora", "Crucio"],
+      "correctAnswer": "Expecto Patronum"
+    },
+    {
+      "id": 21,
+      "question": "What village is near Hogwarts?",
+      "options": ["Hogsmeade", "Little Whinging", "Godric’s Hollow", "Ottery St Catchpole"],
+      "correctAnswer": "Hogsmeade"
+    },
+    {
+      "id": 22,
+      "question": "What is Ron’s middle name?",
+      "options": ["Bilius", "Arthur", "Percy", "Fred"],
+      "correctAnswer": "Bilius"
+    },
+    {
+      "id": 23,
+      "question": "Who was the first person to escape Azkaban?",
+      "options": ["Sirius Black", "Bellatrix Lestrange", "Barty Crouch Jr.", "Lucius Malfoy"],
+      "correctAnswer": "Sirius Black"
+    },
+    {
+      "id": 24,
+      "question": "What is the symbol of Ravenclaw house?",
+      "options": ["Eagle", "Raven", "Snake", "Lion"],
+      "correctAnswer": "Eagle"
+    },
+    {
+      "id": 25,
+      "question": "Who teaches Herbology at Hogwarts?",
+      "options": ["Professor Sprout", "Professor Flitwick", "Professor Snape", "Professor Hooch"],
+      "correctAnswer": "Professor Sprout"
+    }
+  ]
+  

@@ -1,0 +1,128 @@
+[
+    {
+      "id": 1,
+      "question": "What is Voldemort's real name?",
+      "options": ["Tom Marvolo Riddle", "Lucius Malfoy", "Severus Snape", "Percy Weasley"],
+      "correctAnswer": "Tom Marvolo Riddle"
+    },
+    {
+      "id": 2,
+      "question": "Who killed Dobby?",
+      "options": ["Bellatrix Lestrange", "Voldemort", "Fenrir Greyback", "Lucius Malfoy"],
+      "correctAnswer": "Bellatrix Lestrange"
+    },
+    {
+      "id": 3,
+      "question": "What is the name of Hagrid's dragon?",
+      "options": ["Norbert", "Aragog", "Fang", "Buckbeak"],
+      "correctAnswer": "Norbert"
+    },
+    {
+      "id": 4,
+      "question": "What spell is used to unlock doors?",
+      "options": ["Alohomora", "Lumos", "Expelliarmus", "Avada Kedavra"],
+      "correctAnswer": "Alohomora"
+    },
+    {
+      "id": 5,
+      "question": "What position does Harry play in Quidditch?",
+      "options": ["Seeker", "Beater", "Chaser", "Keeper"],
+      "correctAnswer": "Seeker"
+    },
+    {
+      "id": 6,
+      "question": "What is the name of Hermione’s cat?",
+      "options": ["Crookshanks", "Scabbers", "Fang", "Hedwig"],
+      "correctAnswer": "Crookshanks"
+    },
+    {
+      "id": 7,
+      "question": "What is the name of the wizarding prison?",
+      "options": ["Azkaban", "Gringotts", "Hogsmeade", "Durmstrang"],
+      "correctAnswer": "Azkaban"
+    },
+    {
+      "id": 8,
+      "question": "Who is the Half-Blood Prince?",
+      "options": ["Severus Snape", "Harry Potter", "Voldemort", "Draco Malfoy"],
+      "correctAnswer": "Severus Snape"
+    },
+    {
+      "id": 9,
+      "question": "What object is used to store memories?",
+      "options": ["Pensieve", "Horcrux", "Time-Turner", "Elder Wand"],
+      "correctAnswer": "Pensieve"
+    },
+    {
+      "id": 10,
+      "question": "What is the core of Voldemort's wand?",
+      "options": ["Phoenix Feather", "Dragon Heartstring", "Unicorn Hair", "Thestral Tail Hair"],
+      "correctAnswer": "Phoenix Feather"
+    },
+    {
+      "id": 11,
+      "question": "What spell lights up dark places?",
+      "options": ["Lumos", "Nox", "Accio", "Stupefy"],
+      "correctAnswer": "Lumos"
+    },
+    {
+      "id": 12,
+      "question": "What is the name of Harry's mother?",
+      "options": ["Lily Potter", "Petunia Dursley", "Molly Weasley", "Bellatrix Lestrange"],
+      "correctAnswer": "Lily Potter"
+    },
+    {
+      "id": 13,
+      "question": "What magical plant screams when uprooted?",
+      "options": ["Mandrake", "Devil’s Snare", "Gillyweed", "Whomping Willow"],
+      "correctAnswer": "Mandrake"
+    },
+    {
+      "id": 14,
+      "question": "What is Professor Trelawney's subject?",
+      "options": ["Divination", "Potions", "Defense Against the Dark Arts", "Herbology"],
+      "correctAnswer": "Divination"
+    },
+    {
+      "id": 15,
+      "question": "What is the full name of Dumbledore?",
+      "options": [
+        "Albus Percival Wulfric Brian Dumbledore",
+        "Albus Severus Potter",
+        "Tom Marvolo Riddle",
+        "Gellert Grindelwald"
+      ],
+      "correctAnswer": "Albus Percival Wulfric Brian Dumbledore"
+    },
+    {
+      "id": 16,
+      "question": "What magical object grants invisibility?",
+      "options": ["Invisibility Cloak", "Time-Turner", "Deluminator", "Resurrection Stone"],
+      "correctAnswer": "Invisibility Cloak"
+    },
+    {
+      "id": 17,
+      "question": "What is the name of the Weasley's house?",
+      "options": ["The Burrow", "Number 12 Grimmauld Place", "Hogwarts", "Shell Cottage"],
+      "correctAnswer": "The Burrow"
+    },
+    {
+      "id": 18,
+      "question": "What object did Dobby receive to be freed?",
+      "options": ["Sock", "Hat", "Wand", "Book"],
+      "correctAnswer": "Sock"
+    },
+    {
+      "id": 19,
+      "question": "What is Harry's Patronus?",
+      "options": ["Stag", "Doe", "Otter", "Hare"],
+      "correctAnswer": "Stag"
+    },
+    {
+      "id": 20,
+      "question": "What is Professor Flitwick's subject?",
+      "options": ["Charms", "Potions", "Herbology", "Transfiguration"],
+      "correctAnswer": "Charms"
+    }
+  ]
+  

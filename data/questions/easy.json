@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "question": "What house is Harry Potter in?",
+      "options": ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"],
+      "correctAnswer": "Gryffindor"
+    },
+    {
+      "id": 2,
+      "question": "What is Hermione’s last name?",
+      "options": ["Weasley", "Granger", "Lovegood", "Black"],
+      "correctAnswer": "Granger"
+    },
+    {
+      "id": 3,
+      "question": "What magical sport does Harry play?",
+      "options": ["Gobstones", "Quidditch", "Wizard Chess", "Exploding Snap"],
+      "correctAnswer": "Quidditch"
+    },
+    {
+      "id": 4,
+      "question": "What is the spell to turn lights on?",
+      "options": ["Lumos", "Nox", "Alohomora", "Accio"],
+      "correctAnswer": "Lumos"
+    },
+    {
+      "id": 5,
+      "question": "Who is the potions master at Hogwarts?",
+      "options": ["Snape", "McGonagall", "Hagrid", "Dumbledore"],
+      "correctAnswer": "Snape"
+    },
+    {
+      "id": 6,
+      "question": "What is Ron's pet rat’s name?",
+      "options": ["Fang", "Scabbers", "Crookshanks", "Norbert"],
+      "correctAnswer": "Scabbers"
+    },
+    {
+      "id": 7,
+      "question": "What animal can Professor McGonagall turn into?",
+      "options": ["Cat", "Dog", "Snake", "Owl"],
+      "correctAnswer": "Cat"
+    },
+    {
+      "id": 8,
+      "question": "What platform is used to board the Hogwarts Express?",
+      "options": ["9", "10", "9 3/4", "8 1/2"],
+      "correctAnswer": "9 3/4"
+    },
+    {
+      "id": 9,
+      "question": "Who is Harry’s godfather?",
+      "options": ["Sirius Black", "Severus Snape", "Arthur Weasley", "Remus Lupin"],
+      "correctAnswer": "Sirius Black"
+    },
+    {
+      "id": 10,
+      "question": "Who is the headmaster of Hogwarts?",
+      "options": ["Dumbledore", "Snape", "Voldemort", "Grindelwald"],
+      "correctAnswer": "Dumbledore"
+    }
+  ]
+  
